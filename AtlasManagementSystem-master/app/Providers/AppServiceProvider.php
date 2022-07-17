@@ -25,7 +25,7 @@ class AppServiceProvider extends ServiceProvider
     {
         $this->registerPolicies();
         Gate::define('admin', function($user){
-            return ($user->role == "1" || $user->role == "2" || $user->role == "3");
+            return ($user->role == "1" || $user->role == "2" || $user->role == "3"); // role==4 が生徒
         });
     }
 }

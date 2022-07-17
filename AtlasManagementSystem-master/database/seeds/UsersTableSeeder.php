@@ -14,15 +14,15 @@ class UsersTableSeeder extends Seeder
     {
         User::create([
             'over_name' => '仲田',
-            'under_name' => '萌木',
+            'under_name' => '滋',
             'over_name_kana' => 'ナカタ',
-            'under_name_kana' => 'モエギ',
-            'mail_address' => 'm@gmail.com',
+            'under_name_kana' => 'シゲル',
+            'mail_address' => 'sigeru@gmail.com',
             'sex' => '1',
-            'birth_day' => '20000401',
+            'birth_day' => '19730508',
             'role' => '1',
-            'password' => '0141',
+            'password' => Hash::make('0508'),
+            'created_at' => new DateTime(),
         ]);
-
     }
 }
