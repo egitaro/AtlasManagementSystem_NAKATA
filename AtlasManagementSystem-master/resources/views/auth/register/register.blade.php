@@ -176,6 +176,11 @@
             <input type="password" class="border-0 w-100 password_confirmation" name="password_confirmation">
           </div>
         </div>
+
+        @foreach ($errors->all() as $error)
+          <li>{{$error}}</li>
+        @endforeach
+
         <div class="mt-5 text-right">
           <input type="submit" class="btn btn-primary register_btn" disabled value="新規登録" onclick="return confirm('登録してよろしいですか？')">
         </div>
